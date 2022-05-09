@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+
+    tools:context=".MainActivity">
+
+
+<TextView
+    android:id="@+id/gmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+    android:text="GMAIL"
+    android:textSize="30sp">
+
+</TextView>
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:id="@+id/fields_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:hint="EMAIL"
+
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:singleLine="true">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/theme"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:hint="THEME"
+
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:singleLine="true">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/massage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:hint="MASSAGE"
+
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:singleLine="true">
+
+        </EditText>
+
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:background="#FF5722"
+        android:text="SEND"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        >
+
+    </Button>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
